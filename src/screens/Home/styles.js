@@ -23,6 +23,14 @@ export const CategoriesContainer = styled.View`
 
 export const CategoriesButton = styled.TouchableOpacity``;
 
+export const ContainerLists = styled.View`
+  margin-top: 48px;
+`;
+
+export const ContainerTitleList = styled(CategoriesContainer)`
+  margin-bottom: 16px;
+`;
+
 const styles = StyleSheet.create({
   categories: {
     borderRadius: 100,

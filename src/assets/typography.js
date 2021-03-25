@@ -10,11 +10,13 @@ export const HomeTitle = styled.Text`
 export const CardTitle = styled(HomeTitle)`
   font-size: 20px;
   font-family: 'gilroy-heavy';
+  color: ${colors.primary_white};
 `;
 
 export const SectionTitle = styled.Text`
   font-size: 18px;
   font-family: 'gilroy-bold';
+  color: ${colors.primary_red};
 `;
 
 export const ProfileSubtitle = styled.Text`
@@ -43,4 +45,5 @@ export const Ability = styled(Caracteristic)`
 export const CardSubtitle = styled.Text`
   font-size: 10px;
   font-family: 'gilroy-medium';
+  color: ${colors.primary_white};
 `;

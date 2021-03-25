@@ -1,9 +1,20 @@
-import React from 'react';
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {Image, TouchableOpacity, FlatList} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
+// Components
+import CardHeroes from '../../components/CardHeroes';
+import data from '../../assets/application.json';
+
+// Styles and Assets
 import styles, * as S from './styles';
-import {HomeSubtitle, HomeTitle} from '../../assets/typography';
+import {
+  HomeSubtitle,
+  HomeTitle,
+  SectionTitle,
+  Description,
+} from '../../assets/typography';
+
 import {
   menuIcon,
   searchIcon,
@@ -16,6 +27,15 @@ import {
 } from '../../assets/icons';
 
 const Home = () => {
+  const renderCard = ({item}) => {
+    return (
+      <CardHeroes
+        name={item.alterEgo}
+        image={item.imagePath}
+        heroName={item.name}
+      />
+    );
+  };
   return (
     <S.Container>
       <S.HeaderContainer>
@@ -96,6 +116,23 @@ const Home = () => {
           </LinearGradient>
         </S.CategoriesButton>
       </S.CategoriesContainer>
+
+      {/* List Heroes */}
+      <S.ContainerLists>
+        <S.ContainerTitleList>
+          <SectionTitle>Heroes</SectionTitle>
+          <TouchableOpacity>
+            <Description>ver tudo</Description>
+          </TouchableOpacity>
+        </S.ContainerTitleList>
+        <FlatList
+          horizontal
+          data={data.heroes}
+          renderItem={renderCard}
+          keyExtractor={(_, index) => index}
+          showsHorizontalScrollIndicator={false}
+        />
+      </S.ContainerLists>
     </S.Container>
   );
 };
