@@ -2,9 +2,16 @@ import {getFontScale} from 'react-native/Libraries/Utilities/PixelRatio';
 import styled from 'styled-components/native';
 import colors from './colors';
 
+export const ProfileTitle = styled.Text`
+  font-size: 40px;
+  font-family: 'gilroy-heavy';
+  color: ${colors.primary_white};
+`;
+
 export const HomeTitle = styled.Text`
   font-size: 32px;
   font-family: 'gilroy-heavy';
+  color: ${colors.primary_white};
 `;
 
 export const CardTitle = styled(HomeTitle)`
@@ -22,6 +29,7 @@ export const SectionTitle = styled.Text`
 export const ProfileSubtitle = styled.Text`
   font-size: 16px;
   font-family: 'gilroy-medium';
+  color: ${colors.primary_white};
 `;
 
 export const HomeSubtitle = styled.Text`

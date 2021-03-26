@@ -6,6 +6,7 @@ import humanIcon from './Human.png';
 import antiHeroIcon from './Antihero.png';
 import heroIcon from './Hero.png';
 import villainIcon from './Villain.png';
+import backIcon from './back.png';
 
 export {
   menuIcon,
@@ -16,4 +17,5 @@ export {
   antiHeroIcon,
   heroIcon,
   villainIcon,
+  backIcon,
 };
