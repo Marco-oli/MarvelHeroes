@@ -3,13 +3,15 @@ import {StyleSheet} from 'react-native';
 
 export const Container = styled.ScrollView`
   flex: 1;
-  padding: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
 `;
 
 export const HeaderContainer = styled.View`
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
+  padding-right: 30px;
 `;
 
 export const TitleContainer = styled.View`
@@ -19,6 +21,7 @@ export const TitleContainer = styled.View`
 export const CategoriesContainer = styled.View`
   flex-direction: row;
   justify-content: space-between;
+  padding-right: 30px;
 `;
 
 export const CategoriesButton = styled.TouchableOpacity``;

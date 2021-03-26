@@ -3,6 +3,7 @@ import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
 // Screens
+import SplashScreen from './screens/SplashScreen';
 import Home from './screens/Home';
 import Details from './screens/Details';
 
@@ -15,6 +16,7 @@ const Routes = () => {
         headerShown: false,
         cardStyle: {backgroundColor: '#f8f8f8'},
       }}>
+      <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Details" component={Details} />
     </Stack.Navigator>
