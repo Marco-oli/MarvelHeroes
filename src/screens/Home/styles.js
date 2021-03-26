@@ -22,12 +22,13 @@ export const CategoriesContainer = styled.View`
   flex-direction: row;
   justify-content: space-between;
   padding-right: 30px;
+  margin-bottom: 48px;
 `;
 
 export const CategoriesButton = styled.TouchableOpacity``;
 
 export const ContainerLists = styled.View`
-  margin-top: 48px;
+  margin-bottom: 48px;
 `;
 
 export const ContainerTitleList = styled(CategoriesContainer)`

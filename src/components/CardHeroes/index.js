@@ -4,7 +4,7 @@ import {ImageBackground, StyleSheet} from 'react-native';
 import * as S from './styles';
 import {CardSubtitle, CardTitle} from '../../assets/typography';
 
-const CardHeroes = ({name, image, heroName}) => {
+const CardHeroes = ({name, image, heroName, onPress}) => {
   const styles = StyleSheet.create({
     styleImage: {
       flex: 1,
@@ -14,7 +14,7 @@ const CardHeroes = ({name, image, heroName}) => {
   });
 
   return (
-    <S.Container>
+    <S.Container onPress={onPress}>
       <ImageBackground source={{uri: image}} style={styles.styleImage}>
         <S.ContainerText>
           <CardSubtitle>{name}</CardSubtitle>

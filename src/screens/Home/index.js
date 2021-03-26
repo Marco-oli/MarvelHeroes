@@ -26,13 +26,14 @@ import {
   alienIcon,
 } from '../../assets/icons';
 
-const Home = () => {
+const Home = ({navigation}) => {
   const renderCard = ({item}) => {
     return (
       <CardHeroes
         name={item.alterEgo}
         image={item.imagePath}
         heroName={item.name}
+        onPress={() => navigation.navigate('Details', {item})}
       />
     );
   };
