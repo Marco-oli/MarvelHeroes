@@ -39,7 +39,7 @@ const Home = ({navigation}) => {
   };
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="transparent" />
+      <StatusBar barStyle="dark-content" backgroundColor="transparent" />
       <S.Container>
         <S.HeaderContainer>
           <TouchableOpacity>

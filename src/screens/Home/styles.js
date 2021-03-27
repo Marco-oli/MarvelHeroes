@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 
 export const Container = styled.ScrollView`
   flex: 1;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-left: 30px;
 `;
 
