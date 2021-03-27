@@ -1,11 +1,14 @@
 import React from 'react';
-import {StatusBar, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import Routes from './src/Routes';
 
 const App = () => {
   return (
-    <View>
-      <StatusBar barStyle={'light-content'} />
-    </View>
+    <>
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+    </>
   );
 };
 
