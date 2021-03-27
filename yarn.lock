@@ -263,7 +263,7 @@
     "@babel/helper-compilation-targets" "^7.13.8"
     "@babel/helper-plugin-utils" "^7.13.0"
     "@babel/plugin-syntax-object-rest-spread" "^7.8.3"
-    "@babel/plugin-transform-parameters" "^7.13.0"
+    "@babel/plugin-transform-param" "^7.13.0"
 
 "@babel/plugin-proposal-optional-catch-binding@^7.0.0":
   version "7.13.8"
@@ -519,9 +519,9 @@
     "@babel/helper-plugin-utils" "^7.12.13"
     "@babel/helper-replace-supers" "^7.12.13"
 
-"@babel/plugin-transform-parameters@^7.0.0", "@babel/plugin-transform-parameters@^7.13.0":
+"@babel/plugin-transform-param@^7.0.0", "@babel/plugin-transform-param@^7.13.0":
   version "7.13.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-parameters/-/plugin-transform-parameters-7.13.0.tgz#8fa7603e3097f9c0b7ca1a4821bc2fb52e9e5007"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-param/-/plugin-transform-param-7.13.0.tgz#8fa7603e3097f9c0b7ca1a4821bc2fb52e9e5007"
   integrity sha512-Jt8k/h/mIwE2JFEOb3lURoY5C85ETcYPnbuAJ96zRBzh1XHtQZfs62ChZ6EP22QlC8c7Xqr9q+e1SU5qttwwjw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.13.0"
@@ -1871,7 +1871,7 @@ babel-preset-fbjs@^3.3.0:
     "@babel/plugin-transform-member-expression-literals" "^7.0.0"
     "@babel/plugin-transform-modules-commonjs" "^7.0.0"
     "@babel/plugin-transform-object-super" "^7.0.0"
-    "@babel/plugin-transform-parameters" "^7.0.0"
+    "@babel/plugin-transform-param" "^7.0.0"
     "@babel/plugin-transform-property-literals" "^7.0.0"
     "@babel/plugin-transform-react-display-name" "^7.0.0"
     "@babel/plugin-transform-react-jsx" "^7.0.0"
@@ -4803,7 +4803,7 @@ metro-react-native-babel-preset@0.64.0, metro-react-native-babel-preset@^0.64.0:
     "@babel/plugin-transform-literals" "^7.0.0"
     "@babel/plugin-transform-modules-commonjs" "^7.0.0"
     "@babel/plugin-transform-object-assign" "^7.0.0"
-    "@babel/plugin-transform-parameters" "^7.0.0"
+    "@babel/plugin-transform-param" "^7.0.0"
     "@babel/plugin-transform-react-display-name" "^7.0.0"
     "@babel/plugin-transform-react-jsx" "^7.0.0"
     "@babel/plugin-transform-react-jsx-self" "^7.0.0"
