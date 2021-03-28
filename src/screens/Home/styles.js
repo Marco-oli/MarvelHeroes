@@ -28,7 +28,7 @@ export const CategoriesContainer = styled.View`
 export const CategoriesButton = styled.TouchableOpacity``;
 
 export const ContainerLists = styled.View`
-  margin-bottom: 48px;
+  margin-bottom: 60px;
 `;
 
 export const ContainerTitleList = styled(CategoriesContainer)`
